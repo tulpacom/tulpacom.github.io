@@ -351,6 +351,11 @@ A: Ага, многие маленькие дети имеют петов. Ре�
 				$("#copy-search-query-btn").addClass("hidden");
 			}
 		});
+
+		document.addEventListener('backbutton', function(){
+			$('.search-container').fadeOut(80);
+			$("#copy-search-query-btn").addClass("hidden");
+		});
 	</script>
 </body>
 </html>
