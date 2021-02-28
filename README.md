@@ -1,1 +1,0 @@
-# tulpacom.github.io
