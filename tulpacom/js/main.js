@@ -86,8 +86,7 @@ $('#search-input').on('input', function() {
 $('#copy-search-query-btn').click(function() {
 	$('#search-input').focus();
 	var val = $('#search-input').val();
-	var s = location.href.replace(location.hash, '') + "#@"+val;
-	var copied = copyToClipboard(s);
+	var copied = copyToClipboard(window.location.origin + "/categories#@" + val);
 	if (copied) {
 		$('#copy-search-query-btn').attr("data-title", "Скопировано!");
 	}
