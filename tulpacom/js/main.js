@@ -16,9 +16,10 @@ oReq.onload = function(oEvent) {
 
 	var query = decodeURI(location.hash);
 	if (query[1] == '@') {
-		var val = simplify(query.substring(2));
+		var val = query.substring(2);
 		$('.search-container').fadeToggle(80);
 		$('#search-input').val(val);
+		val = simplify(val);
 		if (val != '') {
 			$("#copy-search-query-btn").removeClass("hidden");
 		}
