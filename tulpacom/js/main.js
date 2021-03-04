@@ -31,9 +31,6 @@ oReq.onload = function(oEvent) {
 oReq.send();
 
 function addResult(item, text) {
-	if (item['category'] == "Hidden")
-		return false;
-
 	if (simplify(item['title']).indexOf(text) >= 0 || item['text'].indexOf(text) >= 0) {
 		$(".results").append('<a class="item" href="'+item['url']+'""><p class="title">'+item['title']+'</p><div class="category">'+item['category']+'</div></a>');
 		return true;
