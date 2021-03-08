@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://tulpacom.github.io/sitemap.xml
